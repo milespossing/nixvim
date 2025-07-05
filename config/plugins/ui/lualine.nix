@@ -123,7 +123,7 @@ in
               },
               {
                 function() return "${icons.diagnostics.Debug}" .. require("dap").status() end,
-                cond = function () return package.loaded["dap"] and require("dap").status() ~= "" end,
+                cond = function() return package.loaded["dap"] and require("dap").status() ~= "" end,
                 color = ui.fg("Debug"),
                 separator = "(",
               },
